@@ -14,3 +14,5 @@ touch tsconfig.json
 
 cd packages/frontend
 pnpm create vite . --template react-ts
+pnpm install -D tailwindcss postcss autoprefixer
+pnpm tailwindcss init -p
