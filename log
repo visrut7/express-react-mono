@@ -1,0 +1,16 @@
+pnpm init
+
+mkdir packages
+mkdir packages/backend
+mkdir packages/frontend
+
+touch pnpm-workspace.yaml
+
+cd packages/backend
+pnpm init
+pnpm i express cors
+pnpm i -D @types/cors @types/express @types/node tsx typescript
+touch tsconfig.json
+
+cd packages/frontend
+pnpm create vite . --template react-ts

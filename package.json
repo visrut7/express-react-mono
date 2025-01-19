@@ -1,0 +1,15 @@
+{
+  "name": "monorepo-root",
+  "private": true,
+  "scripts": {
+    "dev": "npm-run-all --parallel dev:*",
+    "dev:backend": "pnpm --filter backend dev",
+    "dev:frontend": "pnpm --filter frontend dev",
+    "build": "npm-run-all --parallel build:*",
+    "build:backend": "pnpm --filter backend build",
+    "build:frontend": "pnpm --filter frontend build"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
