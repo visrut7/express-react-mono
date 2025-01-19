@@ -16,3 +16,7 @@ cd packages/frontend
 pnpm create vite . --template react-ts
 pnpm install -D tailwindcss postcss autoprefixer
 pnpm tailwindcss init -p
+npm i -D daisyui@latest
+pnpm add @tanstack/react-query
+pnpm install --save clsx
+pnpm install react-icons --save
